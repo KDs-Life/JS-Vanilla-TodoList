@@ -36,7 +36,7 @@ function renderTodos() {
       renderTodos();
     });
 
-//Bei abbrechen vom edit entseht ein Error
+    // Bei Abbrechen vom Edit entsteht ein Error
     const editButton = listItem.querySelector(".edit");
     editButton.addEventListener("click", () => {
       const newText = prompt("Neuen Text eingeben:", todo.text);
@@ -71,6 +71,14 @@ function addTodo() {
 Sie holt sich den Text aus dem Eingabefeld, überprüft, ob er nicht leer ist, 
 fügt dann das Todo zur Liste hinzu, speichert die aktualisierte Liste im Local Storage und ruft renderTodos() auf, um die Anzeige zu aktualisieren. */ 
 
+// Event Listener für das Eingabefeld, um auf Enter zu reagieren
+const todoInput = document.getElementById("todo");
+todoInput.addEventListener("keydown", function (event) {
+  if (event.key === "Enter") {
+    addTodo();
+  }
+});
+
 // Event Listener für den "Save"-Button
 const addButton = document.getElementById("add");
 addButton.addEventListener("click", addTodo);
@@ -79,4 +87,3 @@ damit die addTodo()-Funktion aufgerufen wird, wenn der Button geklickt wird. */
 
 // Initialisierung: Todos anzeigen
 renderTodos();
-
