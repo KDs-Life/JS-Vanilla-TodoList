@@ -36,7 +36,7 @@ function renderTodos() {
       renderTodos();
     });
 
-//Bei abbrechen vom edit entshet ein Error
+//Bei abbrechen vom edit entseht ein Error
     const editButton = listItem.querySelector(".edit");
     editButton.addEventListener("click", () => {
       const newText = prompt("Neuen Text eingeben:", todo.text);

@@ -5,8 +5,8 @@
 }
 body {
   font-family: "Gochi Hand", cursive;
-background-image: url(./image/ffflurry.svg);
-  
+  background-image: url(./image/ffflurry.svg);
+
   color: hsl(198, 1%, 29%);
   min-height: 70vh;
   text-align: center;
@@ -65,13 +65,13 @@ img {
   transition: all 0.2s ease-in;
 }
 #todo {
-  
   width: 25%;
   padding: 5px;
   border: 1px solid #ccc;
   border-radius: 5px;
   margin-right: 5px;
   font-size: 1rem;
+
 }
 
 .listBox {
@@ -104,7 +104,8 @@ li {
   border: 1px solid red;
   background-color: burlywood;
   border-radius: 10px;
-
+  box-sizing: border-box;
+ 
 }
 
 /* li:hover {
@@ -119,7 +120,6 @@ li {
   display: flex;
   justify-content: space-between;
   align-items: center;
-
 }
 .delete {
   border: 1px solid #ccc;
@@ -151,4 +151,3 @@ li {
   -webkit-transition: all 0.2s ease-in;
   transition: all 0.2s ease-in;
 }
-
