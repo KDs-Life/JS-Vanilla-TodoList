@@ -21,13 +21,13 @@ function renderTodos() {
   todosList.innerHTML = "";
 
   todos.forEach((todo, index) => {
-    const listItem = document.createElement("li");
+    const listItem = document.createElement('li');
     listItem.innerHTML = `
-      ${todo.text}
-      <div className="button-box">
-      <button class="edit" data-index="${index}">Edit</button>
-      <button class="delete" data-index="${index}">Delete</button>
-    </div>`;
+      <span class="todo-text">${todo.text}</span>
+      <div class="button-box">
+        <button class="edit" data-index="${index}">Edit</button>
+        <button class="delete" data-index="${index}">Delete</button>
+      </div>`;
 
     const deleteButton = listItem.querySelector(".delete");
     deleteButton.addEventListener("click", () => {

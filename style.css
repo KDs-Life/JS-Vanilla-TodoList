@@ -71,7 +71,6 @@ img {
   border-radius: 5px;
   margin-right: 5px;
   font-size: 1rem;
-
 }
 
 .listBox {
@@ -94,6 +93,13 @@ img {
   flex-direction: column;
   list-style: none;
 }
+.todo-text {
+  flex: 1;
+  margin-right: 10px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
 li {
   display: flex;
   justify-content: space-between;
@@ -105,7 +111,6 @@ li {
   background-color: burlywood;
   border-radius: 10px;
   box-sizing: border-box;
- 
 }
 
 /* li:hover {
@@ -120,6 +125,7 @@ li {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 10px;
 }
 .delete {
   border: 1px solid #ccc;
